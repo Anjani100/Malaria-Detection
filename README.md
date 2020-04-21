@@ -3,7 +3,7 @@ A Machine Learning Model to detect infected cells.
 
 This project deals with the detection of Malarial cells and differentiates the parasitized cells from the uninfected cells.
 # Data Extraction
-The data is easily available at  Kaggle. You need to have a Kaggle account in order to download the dataset. The dataset contains a total of 27,558 images (335 MB in size) equally divided into 2 categories: Parasitized (or infected) and Infected.
+The data is easily available at https://www.kaggle.com/iarunava/cell-images-for-detecting-malaria. You need to have a Kaggle account in order to download the dataset. The dataset contains a total of 27,558 images (335 MB in size) equally divided into 2 categories: Parasitized (or infected) and Infected.
 # Data Cleaning
 The data we extracted isn’t ready to be implemented. So, we need to clean it. First, we define the location where we’ve kept all our data in the DATADIR variable. 
 •	Next, we define the CATEGORIES in which we keep the ‘categories’ we need to predict. The images in the dataset are not all of the same dimension and for the model that I’m going to use to work, we need to resize all our images. So, I defined IMG_SIZE to 100 which is for (100 * 100 images). Feel free to change this if you’re low on memory (Try 50 or 64 if you’ve RAM <= 8GB). We also define the ‘training_data’ variable where we are going to save all our data. 
